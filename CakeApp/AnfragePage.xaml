@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CakeApp.AnfragePage">
+	<StackLayout>
+		<Label Text="Bitte geben Sie Ihre E-Mailadresse an:" />
+		<Entry HeightRequest="50"/>
+		<Label Text="Hier ist Platz für ihre Kommentare:" />
+		<Entry HeightRequest="200" />
+	</StackLayout>
+</ContentPage>

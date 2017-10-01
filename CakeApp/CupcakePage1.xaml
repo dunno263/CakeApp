@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage Title="Cupcake"
 	xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CakeApp.CupcakePage1">
-	<ContentPage.Content>
-	</ContentPage.Content>
+	<StackLayout>
+	<Button VerticalOptions="Start" HorizontalOptions="End" Text="Anfrage" Clicked="ButtonNextCupcake_Clicked">
+	</Button>
+
+	<TableView>
+		<TableView.Root>
+			<TableSection Title="Spezifikationen">
+				<ViewCell>
+					<StackLayout Orientation="Horizontal">
+						<Label Text="Anzahl" HorizontalOptions="Start" VerticalOptions="Center" Margin="20,0,0,0"/>
+						<Entry HorizontalOptions="EndAndExpand" WidthRequest="100" Margin="0,0,20,0" 
+						HorizontalTextAlignment="End"/>
+					</StackLayout>
+				</ViewCell>
+				<ViewCell>
+					<Label Text="pro Person werden 1,5 - 2 Cupcakes empfohlen" TextColor = "Silver" Margin="20,0,0,0"/>
+				</ViewCell>
+			</TableSection>
+		</TableView.Root>
+	</TableView>
+	</StackLayout>
 </ContentPage>

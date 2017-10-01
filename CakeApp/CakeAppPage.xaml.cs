@@ -11,9 +11,14 @@ namespace CakeApp
 			InitializeComponent();
 		}
 
-		void VcHochzeit_Tapped(object sender, System.EventArgs e)
+		async void VcHochzeit_Tapped(object sender, System.EventArgs e)
 		{
-			
+			await Navigation.PushAsync(new CupcakePage1());
+		}
+
+		async void VcKiBu_Tapped(object sender, System.EventArgs e)
+		{
+			await Navigation.PushAsync(new CupcakePage1());
 		}
 
 		async void VcCupcakes_Tapped(object sender, System.EventArgs e)

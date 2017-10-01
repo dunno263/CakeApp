@@ -5,10 +5,10 @@
 			<TableRoot>
 				<TableSection Title="Torten">
 					<ViewCell Tapped="VcHochzeit_Tapped">
-						<Label VerticalOptions="Center" Margin="10,0,0,0" HorizontalOptions="Start"
+						<Label VerticalOptions="Center" Margin="20,0,0,0" HorizontalOptions="Start"
 						Text="Hochzeit" />
 					</ViewCell>
-					<ViewCell>
+					<ViewCell Tapped="VcKiBu_Tapped">
 						<Label VerticalOptions="Center" HorizontalOptions="Center"
 						Text="Kindergeburtstag" />
 					</ViewCell>
