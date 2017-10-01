@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:CakeApp" x:Class="CakeApp.CakeAppPage">
+<ContentPage Title="Übericht" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:CakeApp" x:Class="CakeApp.CakeAppPage">
 	<StackLayout> 
 		<TableView Intent ="Menu" VerticalOptions="Center" HorizontalOptions="Fill">
 			<TableRoot>
 				<TableSection Title="Torten">
 					<ViewCell Tapped="VcHochzeit_Tapped">
-						<Label Text="Hochzeit" />
+						<Label VerticalOptions="Center" Margin="10,0,0,0" HorizontalOptions="Start"
+						Text="Hochzeit" />
 					</ViewCell>
-					<SwitchCell Text="Hochzeit" />
-					<SwitchCell Text="Kindergeburtstag" />
+					<ViewCell>
+						<Label VerticalOptions="Center" HorizontalOptions="Center"
+						Text="Kindergeburtstag" />
+					</ViewCell>
 				</TableSection>
 				<TableSection Title="Cupcakes">
-					<SwitchCell Text ="Cupcakes" />
+					<ViewCell Tapped="VcCupcakes_Tapped" >
+						<Label VerticalOptions="Center" HorizontalOptions="End"
+						Text="Cupcakes" />
+					</ViewCell>
 				</TableSection>
 			</TableRoot>
 		</TableView>

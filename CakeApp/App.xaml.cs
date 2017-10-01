@@ -8,7 +8,7 @@ namespace CakeApp
 		{
 			InitializeComponent();
 
-			MainPage = new CakeAppPage();
+			MainPage = new NavigationPage( new CakeAppPage());
 		}
 
 		protected override void OnStart()
