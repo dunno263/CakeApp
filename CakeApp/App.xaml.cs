@@ -9,6 +9,7 @@ namespace CakeApp
 			InitializeComponent();
 
 			MainPage = new NavigationPage( new CakeAppPage());
+
 		}
 
 		protected override void OnStart()

@@ -8,17 +8,23 @@ namespace CakeApp
 {
 	public partial class CupcakePage1 : ContentPage
 	{
+		private Anfrage anfrage = new Anfrage();
+
 		public CupcakePage1()
 		{
 			InitializeComponent();
-			ToolbarItems.Add(new ToolbarItem("Filter", "filter.png", async () => {   var page = new ContentPage(); var result = await page.DisplayAlert("Title", "Message", "Accept", "Cancel"); }));
-
+			anfrage.Art = AnfrageArt.Cupcakes;
 		}
 
 		async void ButtonNextCupcake_Clicked(object sender, System.EventArgs e)
 		{
-			await Navigation.PushAsync(new AnfragePage());
+			anfrage.sAnzahl = Entry_Anzahl.Text;
+			await Navigation.PushAsync(new AnfragePage(anfrage));
+		}
 
+		void Handle_Completed(object sender, System.EventArgs e)
+		{
+			DisplayAlert("Handle_Completed erreicht", "test", "Test");
 		}
 	}
 }

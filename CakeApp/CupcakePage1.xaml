@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage Title="Cupcake"
-	xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CakeApp.CupcakePage1">
+	xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="CakeApp.CupcakePage1">
 	<StackLayout>
-	<Button VerticalOptions="Start" HorizontalOptions="End" Text="Anfrage" Clicked="ButtonNextCupcake_Clicked">
-	</Button>
-
 	<TableView>
 		<TableView.Root>
 			<TableSection Title="Spezifikationen">
 				<ViewCell>
 					<StackLayout Orientation="Horizontal">
 						<Label Text="Anzahl" HorizontalOptions="Start" VerticalOptions="Center" Margin="20,0,0,0"/>
-						<Entry HorizontalOptions="EndAndExpand" WidthRequest="100" Margin="0,0,20,0" 
-						HorizontalTextAlignment="End"/>
+						<Entry x:Name="Entry_Anzahl" HorizontalOptions="EndAndExpand" WidthRequest="100" Margin="0,0,20,0" 
+						HorizontalTextAlignment="End" Keyboard="Numeric"/>
 					</StackLayout>
 				</ViewCell>
 				<ViewCell>
@@ -21,5 +19,7 @@
 			</TableSection>
 		</TableView.Root>
 	</TableView>
+	<Button VerticalOptions="End" HorizontalOptions="Center" Text="Anfrage erstellen" Clicked="ButtonNextCupcake_Clicked">
+	</Button>
 	</StackLayout>
 </ContentPage>
